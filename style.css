@@ -1,0 +1,125 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #e5f9db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.body-texts-wrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #99A98F;
+}
+
+.body-text-top,
+.body-text-bottom {
+  font-size: 150px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  animation: 25s rightToleft infinite linear;
+}
+
+.body-text-bottom {
+  animation: 25s leftToright infinite linear;
+}
+
+.calculator-body-wrapper {
+  perspective: 400px;
+}
+
+.calculator-body {
+  background: rgba(153, 169, 143, 0.52);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(153, 169, 143, 0.32);
+  transition: 0.5s;
+  padding-inline: 15px;
+  padding-block: 15px;
+}
+
+.display {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background: rgba(131, 118, 79, 0.58);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.2px);
+  -webkit-backdrop-filter: blur(6.2px);
+  border: 1px solid rgba(131, 118, 79, 0.31);
+}
+
+.buttons-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.buttons-row{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn{
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  background: rgba(131, 118, 79, 0.58);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.2px);
+  -webkit-backdrop-filter: blur(6.2px);
+  border: 1px solid rgba(131, 118, 79, 0.31);
+  cursor: pointer;
+}
+
+@keyframes leftToright {
+  0% {
+    transform: translateX(-1300px);
+  }
+  100% {
+    transform: translateX(1300px);
+  }
+}
+
+@keyframes rightToleft {
+  0% {
+    transform: translateX(1300px);
+  }
+  100% {
+    transform: translateX(-1300px);
+  }
+}
