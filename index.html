@@ -23,38 +23,37 @@
 
     <div class="calculator-body-wrapper">
         <div class="calculator-body">
-            <div class="display">1070987098</div>
-            
+          <input type="text" name="display" id="display">  
+
             <div class="buttons-wrapper">
                 <div class="buttons-row">
-                    <button class="btn" id="del">del</button>
-                    <button class="btn" id="c">C</button>
-                    <button class="btn" id="%">%</button>
-                    <button class="btn" id="/">/</button>
+                  <button class="btn" onclick="display.value += ',' "  id="comma">,</button>
+                  <button class="btn" onclick="display.value = ''"  id="c">C</button>
+                  <button class="btn" onclick="display.value = display.value.toString().slice(0, -1) "  id="del">del</button>
+                    <button class="btn" onclick="display.value += '/' "  id="divide">/</button>
                 </div>
                 <div class="buttons-row">
-                    <button class="btn" id="7">7</button>
-                    <button class="btn" id="8">8</button>
-                    <button class="btn" id="9">9</button>
-                    <button class="btn" id="*">*</button>
+                    <button class="btn" onclick="display.value += '7' "  id="seven">7</button>
+                    <button class="btn" onclick="display.value += '8' "  id="eight">8</button>
+                    <button class="btn" onclick="display.value += '9' "  id="nine">9</button>
+                    <button class="btn" onclick="display.value += '*' "  id="multiple">*</button>
                 </div>
                 <div class="buttons-row">
-                    <button class="btn" id="4">4</button>
-                    <button class="btn" id="5">5</button>
-                    <button class="btn" id="6">6</button>
-                    <button class="btn" id="-">-</button>
+                    <button class="btn" onclick="display.value += '4' "  id="four">4</button>
+                    <button class="btn" onclick="display.value += '5' "  id="five">5</button>
+                    <button class="btn" onclick="display.value += '6' "  id="six">6</button>
+                    <button class="btn" onclick="display.value += '-' "  id="subtract">-</button>
                 </div>
                 <div class="buttons-row">
-                    <button class="btn" id="1">1</button>
-                    <button class="btn" id="2">2</button>
-                    <button class="btn" id="3">3</button>
-                    <button class="btn" id="+">+</button>
+                    <button class="btn" onclick="display.value += '1' "  id="one">1</button>
+                    <button class="btn" onclick="display.value += '2' "  id="two">2</button>
+                    <button class="btn" onclick="display.value += '3' "  id="three">3</button>
+                    <button class="btn" onclick="display.value += '+' "  id="add">+</button>
                 </div>
                 <div class="buttons-row">
-                    <button class="btn" id="1">.</button>
-                    <button class="btn" id="2">0</button>
-                    <button class="btn" id="3">,</button>
-                    <button class="btn" id="+">=</button>
+                    <button class="btn" onclick="display.value += '.' "  id="dot">.</button>
+                    <button class="btn" onclick="display.value += '0' "  id="zero">0</button>
+                    <button class="btn" onclick="display.value = eval(display.value) "  id="equal">=</button>
                 </div>
             </div>
         </div>

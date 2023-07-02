@@ -13,7 +13,6 @@ function rotate(e) {
     let x = e.offsetX - halfHeight
     let y = e.offsetY - halfHeight
     this.style.transform = `rotateX(${-y / 10}deg) rotateY(${x / 10}deg)`
-
 }
 function remove() {
     this.style.transform = `rotate(0)`

@@ -50,12 +50,12 @@ body {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(153, 169, 143, 0.32);
-  transition: 0.5s;
+  transition: 3s;
   padding-inline: 15px;
   padding-block: 15px;
 }
 
-.display {
+#display {
   width: 100%;
   height: 60px;
   padding: 10px;
@@ -72,6 +72,7 @@ body {
   backdrop-filter: blur(6.2px);
   -webkit-backdrop-filter: blur(6.2px);
   border: 1px solid rgba(131, 118, 79, 0.31);
+  text-align: right;
 }
 
 .buttons-wrapper{
@@ -106,20 +107,26 @@ body {
   cursor: pointer;
 }
 
+#equal{
+  width: 130px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
 @keyframes leftToright {
   0% {
-    transform: translateX(-1300px);
+    transform: translateX(-119%);
   }
   100% {
-    transform: translateX(1300px);
+    transform: translateX(119%);
   }
 }
 
 @keyframes rightToleft {
   0% {
-    transform: translateX(1300px);
+    transform: translateX(119%);
   }
   100% {
-    transform: translateX(-1300px);
+    transform: translateX(-119%);
   }
 }
