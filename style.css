@@ -75,6 +75,10 @@ body {
   text-align: right;
 }
 
+#display:focus{
+  outline: none;
+}
+
 .buttons-wrapper{
   display: flex;
   flex-direction: column;
